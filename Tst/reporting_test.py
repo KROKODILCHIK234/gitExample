@@ -52,7 +52,7 @@ class ReportingTest(unittest.TestCase):
         nomenclature_list = []  # Список номенклатур
         unit = unit_model.create_killogram()  # Создание экземпляра единицы измерения в килограммах
         group = group_model.create_default_group()
-        item = nomenclature_model("Тушка бройлера", group, unit)
+        item = nomenclature_model("Куриное филе", group, unit)
         nomenclature_list.append(item)
         key = storage.nomenclature_key()
         data[key] = nomenclature_list
